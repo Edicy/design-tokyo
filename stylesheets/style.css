@@ -500,7 +500,6 @@ h2#site-name {
  float: left;
  background: none;
  padding: 0 10px 0 0;
- height: 20px
 }
 #mobile-submenu {
  background: #f0f0f0;
@@ -513,13 +512,12 @@ h2#site-name {
  border-bottom: 1px solid #ebebeb;
 }
 }
-input, button {
-	-webkit-appearance: none;
-}
+textarea, input {outline:none;}
 html {
 	-webkit-text-size-adjust: none;
 }
 .edy-c-btn-inn {
 	text-shadow: none
 }
-
+#content form {margin: 20px 0}
+#content ol {padding-left: 40px;}

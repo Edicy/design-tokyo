@@ -3,7 +3,7 @@
 <li{% if l2.selected? %} class="active"{% endif %}{% unless l2.translated? %} class="untranslated"{% endunless %}>
   <a href="{{l2.url}}"{% unless l2.translated? %} class="fci-editor-menuadd"{% endunless %}>{{l2.title}}</a>{% if l2.selected? %}
   <ul id="thirdmenu">{% for l3 in l2.visible_children %}
-   <li{% if l3.selected? %} class="active"{% endif %}{% unless l3.translated? %} class="untranlated"{% endunless %}>
+   <li{% if l3.selected? %} class="active"{% endif %}{% unless l3.translated? %} class="untranslated"{% endunless %}>
     <a href="{{l3.url}}"{% unless l3.translated? %} class="fci-editor-menuadd"{% endunless %}>{{l3.title}}</a>
    </li>{% endfor %}
    <li>{% menubtn l2.hidden_children %}</li>     

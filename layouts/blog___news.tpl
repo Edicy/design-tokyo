@@ -9,12 +9,12 @@
   <div id="content-wrap" class="clear">
     <div id="left-column">
          <h2 id="site-name">{% editable site.header %}</h2>
-         <div class="intro"> {% content name="slogan" %} </div>
+         <div class="intro clear"> {% content name="slogan" %} </div>
         {% include "Footer" %}
     </div>
     <!-- //left-column -->
     {% include "Mobilemenu" %}
-    <div id="content">
+    <div id="content" class="clear">
       {% if editmode %}<p>{% addbutton class="add-article" %}</p>{% endif %}
        <ul id="bloglist">{% for article in articles %}
         <li>

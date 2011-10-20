@@ -6,4 +6,3 @@
 	</script>
 {% endif %}
 {% unless editmode %}{{site.analytics}}{% endunless %}
-

@@ -9,12 +9,12 @@
   <div id="content-wrap" class="clear">
      <div id="left-column">
          <h2 id="site-name">{% editable site.header %}</h2>
-         <div class="intro"> {% content name="slogan" %} </div>
+         <div class="intro clear"> {% content name="slogan" %} </div>
         {% include "Footer" %}
     </div>
     <!-- //left-column -->
     {% include "Mobilemenu" %}
-    <div id="content">
+    <div id="content" class="clear">
       
           <h2>{% editable article.title %} <span class="meta">{{article.created_at | format_date:"short"}} / {{article.author.name}}</span></h2>
            <div class="excerpt">{% editable article.excerpt %}</div>
