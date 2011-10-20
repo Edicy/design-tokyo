@@ -1,0 +1,16 @@
+#left-column {
+	width: 200px
+}
+#content {
+	width: 500px;
+        padding: 0 50px
+}
+#right-column {
+	width: 182px
+}
+#bloglist li {
+	background: none;
+	margin-bottom: 29px;
+	padding-left: 0;
+}
+
