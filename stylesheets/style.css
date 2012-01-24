@@ -408,6 +408,10 @@ ul li {
 	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, .6);
 	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .6)
 }
+.placeholder { color: #b2b2b2 !important }
+::-webkit-input-placeholder { color: #b2b2b2 !important }
+:-moz-placeholder { color: #b2b2b2 !important }
+
  @media screen and (max-width: 770px) {
 #comment-form {
  padding: 14px;
