@@ -7,7 +7,7 @@
 <div id="wrap">
   <div id="tokyo-badge"> {% loginblock %}Edicy Tokyo theme{% endloginblock %}</div>
   <div id="content-wrap" class="clear">
-   <h1 id="site-name" class="clear">{% editable site.header %}</h1>
+   <div id="site-name" class="clear">{% editable site.header %}</div>
     <div id="left-column">
       <div class="intro clear"> {% content name="slogan" %} </div>
        {% include "News" %}

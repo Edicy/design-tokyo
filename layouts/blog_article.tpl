@@ -21,6 +21,22 @@
            <div class="excerpt">{% editable article.excerpt %}</div>
            <div class="article-body">{% editable article.body %}</div>
            
+           {% if editmode %}
+            <div class="cfx article-tags">
+                <div class="article-tag-icon"></div>
+                {% editable article.tags %}
+            </div>
+          {% else %}
+            {% unless article.tags == empty %}
+                <div class="cfx article-tags">
+                    <div class="article-tag-icon"></div>
+                    {% for tag in article.tags %}
+                        <a href="{{ article.page.url }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                </div>
+            {% endunless %}
+        {% endif %}
+           
            {% case article.comments_count %}{% when 0 %}
            
            {% else %}
@@ -30,7 +46,7 @@
             {% for comment in article.comments %}
               <li class="edy-site-blog-comment">
                 <p class="comment-meta"><b>{{comment.author}}</b> / {{comment.created_at | format_date:"short"}} {% removebutton %}</p>
-                <p>{{comment.body}}</p>
+                <p>{{comment.body_html}}</p>
               </li>{% endfor %}
             </ul>
           </div>
