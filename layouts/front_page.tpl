@@ -15,7 +15,7 @@
     </div>
     <!-- //left-column -->
     {% include "Mobilemenu" %}
-    <div id="content" class="clear">
+    <div id="content" class="clear" data-search-indexing-allowed="true">
       {% content %}
     </div>
     <!-- //content -->

@@ -18,8 +18,8 @@
     <div id="content" class="clear">
       
           <h2>{% editable article.title %} <span class="meta">{{article.created_at | format_date:"short"}} / {{article.author.name}}</span></h2>
-           <div class="excerpt">{% editable article.excerpt %}</div>
-           <div class="article-body">{% editable article.body %}</div>
+           <div class="excerpt" data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
+           <div class="article-body" data-search-indexing-allowed="true">{% editable article.body %}</div>
            
            {% if editmode %}
             <div class="cfx article-tags">
