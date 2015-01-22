@@ -426,6 +426,10 @@ ul li {
 #langmenu .active a {
 	color: #5e5e5e
 }
+#langmenu .edy-cbtn {
+	display: block;
+	margin-top: 7px;
+}
 /* search */
 #onpage_search {
 	background: #eaeaea;
