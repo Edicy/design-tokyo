@@ -6,7 +6,7 @@
 </head>
 <body>
 <div id="wrap">
- <div id="tokyo-badge"> {% loginblock %}Edicy Tokyo theme{% endloginblock %} </div>
+ <div id="tokyo-badge"> {% loginblock %}Voog Tokyo theme{% endloginblock %} </div>
   <div id="content-wrap" class="clear">
     <div id="left-column">
          <h2 id="site-name">{% editable site.header %}</h2>
