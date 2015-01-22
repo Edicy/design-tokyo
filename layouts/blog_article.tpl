@@ -39,7 +39,7 @@
            {% case article.comments_count %}{% when 0 %}
            
            {% else %}
-           <div id="comments">
+           <div id="comments" class="content-hyphenate">
             <h2>{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{article.comments_count}}</span></h2>
             <ul id="comments-list">
             {% for comment in article.comments %}

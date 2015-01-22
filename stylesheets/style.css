@@ -4,6 +4,15 @@ body {
 	font: 11px/20px "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 	color: #858180;
 }
+
+.content-hyphenate {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 a {
 	color: #ac0000;
 	text-decoration: none
