@@ -5,7 +5,6 @@
 </head>
 <body>
 <div id="wrap">
- <div id="tokyo-badge"> {% loginblock %}Voog Tokyo theme{% endloginblock %} </div>
   <div id="content-wrap" class="clear">
     <div id="left-column">
         <h2 id="site-name">{% editable site.header %}</h2>
@@ -14,7 +13,7 @@
     </div>
     <!-- //left-column -->
     {% include "Mobilemenu" %}
-    <div id="content" class="clear" data-search-indexing-allowed="true">
+    <div id="content content-hyphenate" class="clear" data-search-indexing-allowed="true">
       {% content %}
     </div>
     <!-- //content -->

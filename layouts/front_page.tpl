@@ -5,7 +5,6 @@
 </head>
 <body id="front">
 <div id="wrap">
-  <div id="tokyo-badge"> {% loginblock %}Voog Tokyo theme{% endloginblock %}</div>
   <div id="content-wrap" class="clear">
    <div id="site-name" class="clear">{% editable site.header %}</div>
     <div id="left-column">

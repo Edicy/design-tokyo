@@ -6,7 +6,6 @@
 </head>
 <body>
 <div id="wrap">
- <div id="tokyo-badge"> {% loginblock %}Voog Tokyo theme{% endloginblock %} </div>
   <div id="content-wrap" class="clear">
      <div id="left-column">
          <h2 id="site-name">{% editable site.header %}</h2>
@@ -18,8 +17,8 @@
     <div id="content" class="clear">
       
           <h2>{% editable article.title %} <span class="meta">{{article.created_at | format_date:"short"}} / {{article.author.name}}</span></h2>
-           <div class="excerpt" data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
-           <div class="article-body" data-search-indexing-allowed="true">{% editable article.body %}</div>
+           <div class="excerpt content-hyphenate" data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
+           <div class="article-body content-hyphenate" data-search-indexing-allowed="true">{% editable article.body %}</div>
            
            {% if editmode %}
             <div class="cfx article-tags">
