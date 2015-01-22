@@ -27,7 +27,7 @@
         {% endif %}
     
     
-      {% if editmode %}<p>{% addbutton class="add-article" %}</p>{% endif %}
+      {% if editmode %}<div>{% addbutton class="add-article" %}</div>{% endif %}
        <ul id="bloglist">{% for article in articles %}
         <li class="content-hyphenate">
           <h2><a href="{{article.url}}">{{article.title}}</a> <span class="meta">{{article.created_at | format_date:"short"}} / {{article.author.name}}</span></h2>
