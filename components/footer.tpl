@@ -1,4 +1,4 @@
-<div id="footer" class="content-hyphenate">
+<div id="footer" >
   {% xcontent name="footer" %}
 </div>
 

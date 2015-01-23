@@ -4,17 +4,17 @@
 {% include "SiteHeader" %} 
 </head>
 <body id="front">
-<div id="wrap">
+<div id="wrap" class="content-hyphenate">
   <div id="content-wrap" class="clear">
    <div id="site-name" class="clear">{% editable site.header %}</div>
     <div id="left-column">
-      <div class="intro clear content-hyphenate"> {% content name="slogan" %} </div>
+      <div class="intro clear"> {% content name="slogan" %} </div>
        {% include "News" %}
        {% include "Footer" %}
     </div>
     <!-- //left-column -->
     {% include "Mobilemenu" %}
-    <div id="content" class="clear content-hyphenate" data-search-indexing-allowed="true">
+    <div id="content" class="clear" data-search-indexing-allowed="true">
       {% content %}
     </div>
     <!-- //content -->
